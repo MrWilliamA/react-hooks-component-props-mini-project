@@ -9,12 +9,13 @@ console.log(blogData);
 function App() {
   return (
   <>
-    <Header blogData={blogData} />
-    <About blogText={blogData.about} img={blogData.image}/>
-    <ArticleList articles={blogData.posts}/>
+   
     <div className="App">
       You're on your own from here! Follow the deliverables; test things out in
       the browser as you write your code; and good luck!
+      <Header name={blogData.name} />
+      <About about={blogData.about} img={blogData.image} />
+      <ArticleList posts={blogData.posts} />
     </div>
   </>  
   );
